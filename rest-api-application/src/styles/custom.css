@@ -1,0 +1,13 @@
+body{
+    color: black
+}
+
+.primary{
+    background: #f2b632 !important;
+}
+
+.secondery{
+    background: black !important;
+    color: whitesmoke !important;
+}
+

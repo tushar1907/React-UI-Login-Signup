@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from '././components/Header/Header'
+import MobileHeader from '././components/MobileHeader/MobileHeader'
+import Footer from '././components/Footer/Footer'
+import Welcome from '././components/Welcome/Welcome'
+import Routes from './Routes'
 import './styles/foundation.min.css'
+import './styles/custom.css'
 
 class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      appName: 'Rest API '
+    }
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <div className="off-canvas-content" data-off-canvas-content>
+          <MobileHeader header={this.state.appName}></MobileHeader>
+          <Header header={this.state.appName}></Header>
+          <article className="grid-container">
+            <Routes />
+            <hr />
+            <Footer></Footer>
+          </article>
+        </div>
       </div>
     );
   }
