@@ -6,9 +6,9 @@ class Welcome extends Component {
     return (
       <div className="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
         <div className="cell">
-          <h2>Project Description</h2>
-          <a href='/login' class='button'>Login</a>
-          <a href='/signup' class='button success'>SignUp</a>
+          <h3>Project Description</h3>
+          <a href='/login' className='button'>Login</a>
+          <a href='/signup' className='button success'>SignUp</a>
 
         </div>
 

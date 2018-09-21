@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { PostData } from '../../services/PostData';
 
 
 
@@ -15,6 +16,10 @@ class Login extends Component {
   }
 
   login(){
+    PostData('login', this.state).then ((result)=>{
+      let responseJSON = result; 
+      console.log(responseJSON);
+    })
     console.log("this is login button")
   }
 
