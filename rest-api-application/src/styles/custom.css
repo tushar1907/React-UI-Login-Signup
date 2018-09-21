@@ -11,3 +11,7 @@ body{
     color: whitesmoke !important;
 }
 
+.bodyPart{
+    min-height: 450px;
+}
+
